@@ -21,10 +21,7 @@ int main()
     map<char,int>::iterator iterator2=mymap.find('c');
 
     mymap.erase(iterator2,mymap.end());
-    for(map<char,int>::iterator it=mymap.begin();it!=mymap.end();it++)
-    {
-        printf("%c %d\n",it->first,it->second);
-    }
+
 
     mymap.clear();
     cout<<mymap.size()<<endl;
